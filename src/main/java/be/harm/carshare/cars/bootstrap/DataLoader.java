@@ -23,7 +23,6 @@ public class DataLoader implements CommandLineRunner {
 
     private void saveDefaultCars() {
         carService.saveCar(Car.builder()
-                .id(1L)
                 .name("BMWeetje")
                 .brand("Suzuki")
                 .numberOfSeats(4)
@@ -31,7 +30,6 @@ public class DataLoader implements CommandLineRunner {
                 .model("Alto")
                 .build());
         carService.saveCar(Car.builder()
-                .id(2L)
                 .name("De groten")
                 .fuelType(FuelType.DIESEL)
                 .numberOfSeats(4)
