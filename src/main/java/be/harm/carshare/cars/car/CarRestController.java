@@ -9,7 +9,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping("cars")
+@RequestMapping("/cars")
 public class CarRestController {
     private final CarService carService;
 
