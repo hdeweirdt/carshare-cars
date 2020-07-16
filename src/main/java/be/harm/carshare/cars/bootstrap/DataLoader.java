@@ -3,7 +3,6 @@ package be.harm.carshare.cars.bootstrap;
 import be.harm.carshare.cars.car.Car;
 import be.harm.carshare.cars.car.CarService;
 import be.harm.carshare.cars.car.FuelType;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -29,7 +28,7 @@ public class DataLoader implements CommandLineRunner {
                 .brand("Suzuki")
                 .numberOfSeats(4)
                 .fuelType(FuelType.PETROL95)
-                .type("Alto")
+                .model("Alto")
                 .build());
         carService.saveCar(Car.builder()
                 .id(2L)
@@ -38,7 +37,7 @@ public class DataLoader implements CommandLineRunner {
                 .numberOfSeats(4)
                 .brand("Kia")
                 .hasGPS(true)
-                .type("Venga")
+                .model("Venga")
                 .build());
     }
 
